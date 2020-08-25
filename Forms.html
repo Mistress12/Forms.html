@@ -1,17 +1,63 @@
-<!DOCTYPE html>
+
 <html>
 <head>
-<title></title>
+<title>Forms</title>
+<link rel="stylesheet" href=""
+<meta charset="utf-8">
 </head>
 <body>
-<form class="" action="Forms.html" method="POST">
-<input type="text" name="email" placeholder="email">
-<option 1: <input type="radio" name="gender" value="Male>"
-    <option 2: <input type="radio" name="gender" value="Female>"
-        <option 3: <input type="radio" name="gender" value="Other>"
+
+    <form class="" action="Forms.html" method="POST">
+<div>
+    <label for="name">Name</label>
+    <input type="text" name="name" id="name" placeholder="username" required></div>
+  <div>
+      <label for="email">Email</label>
+    <input type="text" name="email" id="email" required></div>
+<div>
+    <label>Password
+    <input type="password" name="password" required></label>
+ </div>
+<div>Female<input type="radio" name="gender" value="Female">
+Male<input type="radio" name="gender" value="Male">
+Others<input type="radio" name="gende" value="Others"></div>
+<div>
+<label for="age">Age</label>
+<input type="number" name="age" id="age" min="1" max="200">
+</div>
+<div>
+    <label for="date"> Birthdate</label>
+    <input type="date" name="data" id="date">
+</div>
+<div>
+Favorite Fruit
+</div>
+ <div> <label for="banana">Banana</label>
+<input type="checkbox" name="banana" id="banana">
+</div>
+<div> <label for="apple">Apple</label>
+    <input type="checkbox" name="apple" id="apple">
+    </div>
+    <div> <label for="Grape">Grape</label>
+        <input type="checkbox" name="grape" id="grape">
+        </div>
+<div>
+    <label for="eyecolor">Eye Color</label>
+    <select name="eyecolor" id="eyecolor">
+        <option vaue="Green">Green</option>
+            <option vaue="Blue">Blue</option>
+                <option vaue="Brown">Brown</option>
+    </select>
+</div>
+<div>
+    <label for="bio">Bio</label>
+    <textarea id="bio" name="bio"></textarea> 
+</div>
+
+    <div>
+<button type="reset">Reset</button>
+<button type="submit">Submit</button>
+</div>
 </form>
-
-
-
-
 </body>
+</html>
