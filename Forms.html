@@ -1,63 +1,126 @@
-
+<!DOCTYPE html>
 <html>
 <head>
-<title>Forms</title>
-<link rel="stylesheet" href=""
+<title>Stars Survey Forms</title>
+
+<div class="regform"><h1>Stars Survey Form</h1></div>
+<link rel="stylesheet" type="text/css" href="Style.css">
+<a href="Registration form.html">Please check out my other form.</a>
 <meta charset="utf-8">
+<meta name="viewport" conent="width=device-width, intitial-scale=1.0">
+<meta http-equiv="x-ua-comatible" content="ie-edge">
+
+<script defer src="javaScript.test.txt"></script>
 </head>
 <body>
+    <div id="error">
+    <div class="survey">
+        <h1 id="title">Star<span>Survey</span></h1>
+        <h3 id="discription">Thank you for signing up at Star Survey. Tell us more about yourself.</h3>
+        <form id="survey-form">
+        <div class="form-inner">
 
-    <form class="" action="Forms.html" method="POST">
-<div>
-    <label for="name">Name</label>
-    <input type="text" name="name" id="name" placeholder="username" required></div>
-  <div>
-      <label for="email">Email</label>
+    
+
+ <form action="/Forms.html" method="post">
+<div class="wrap">
+ 
+    
+<div class="space">
+      <label for="email"><h1>Email</h1></label>
     <input type="text" name="email" id="email" required></div>
 <div>
-    <label>Password
+    <label><h2>Password</h2>
     <input type="password" name="password" required></label>
  </div>
-<div>Female<input type="radio" name="gender" value="Female">
-Male<input type="radio" name="gender" value="Male">
-Others<input type="radio" name="gende" value="Others"></div>
-<div>
-<label for="age">Age</label>
-<input type="number" name="age" id="age" min="1" max="200">
-</div>
-<div>
-    <label for="date"> Birthdate</label>
-    <input type="date" name="data" id="date">
-</div>
-<div>
-Favorite Fruit
-</div>
- <div> <label for="banana">Banana</label>
-<input type="checkbox" name="banana" id="banana">
-</div>
-<div> <label for="apple">Apple</label>
-    <input type="checkbox" name="apple" id="apple">
-    </div>
-    <div> <label for="Grape">Grape</label>
-        <input type="checkbox" name="grape" id="grape">
-        </div>
-<div>
-    <label for="eyecolor">Eye Color</label>
-    <select name="eyecolor" id="eyecolor">
-        <option vaue="Green">Green</option>
-            <option vaue="Blue">Blue</option>
-                <option vaue="Brown">Brown</option>
-    </select>
-</div>
-<div>
-    <label for="bio">Bio</label>
-    <textarea id="bio" name="bio"></textarea> 
+ <div id="name">
+     <h2 class="name"></h2>
+ </div>
+ <label for="fname"><h2>First name:</h2></label><br>
+ <input type="text" id="fname" name="fname" placeholder="First Name" required><br>
+ <label for="lname"><h2>Last name:</h2></label><br>
+ <input type="text" id="lname" name="lname" placeholder="Last Name" required=""><br><br>
+ <div>
+<!--This was the one i wanted to submit but i could fighout how to move the the question over towrd the center. But 
+    also didn`t won't to give up on this one. if anyone how a idea on how to help me please do.--> 
+
 </div>
 
+  <div>
+ <h2>Phone number</h2>
+<input class="code" type="text" name="area_code">
+<div>
+<label class="area_code"></label><h2>Area code</h2></label>
+<input clas="number" type="text" name="phone"></div>
+
+  <div><h2>Female</h2><input type="radio" name="gender" value="Female">
+<h2>Male</h2><input type="radio" name="gender" value="Male">
+<h2>Other</h2><input type="radio" name="gender" value="Other"></div>
+
+<div class="space-se">
+    <label for="number-label" id="name-label">Age</label><br>
+    <input type="number" placeholder="age" id="number" min="18" max="90" required>
+   </div>
+
+</div>
+<div class="space-se">
+    <label for="number-label" id="name-label">Birthdate</label><br>
+    <input type="date"  id="date">
+
+   <!--I know this may seem throw together because i did this form three diffient times. all of the forms are put together and the 
+    way i could put it. it don't know how to line it up better then this.-->
+
+   
+
+   
+   
+   
+   
+   
+    <div class="space">
+    <label id="dropdown-label">Zodiac Sign</label><br>
+    <select id="dropdown">
+       <option vaue="Leo">Leo</option>
+       <option vaue="Aquarius">Aquarius</option>
+           <option vaue="Sagittarius">Sagittarius</option>
+           <option vaue="Gemini">Geminin</option>
+           <option vaue="Pisces">Pisces</option>
+           <option vaue="Virgos">Virgos</option>
+           <option vaue="Cancer">Cancer</option>
+           <option vaue="Taurus">Taurus</option>
+           <option vaue="Scorpio">Scorpio</option>
+           <option vaue="Aries">Aries</option>
+           <option vaue="Libra">Libra</option>
+           <option vaue="Capricorn">Capricorn</option>
+    </select><br>
+<div>
+<h2>Favorite Music</h2>
+</div class="space-se">
+<label for="Rock">Rock</label>
+<input type="checkbox" name="Rock" id="Rock">
+
+ <label for="Hip Hop">Hip Hop</label>
+    <input type="checkbox" name="Hip Hop" id="Hip Hop">
+    
+     <label for="Jazz">Jazz</label>
+        <input type="checkbox" name="Jazz" id="Jazz">
+   <!--my first day was for input control.--->
+   <!-- my second was css and decding what type of forms it will be.-->  
+        
+   <div class="space">
+    <label id="Bio"></label><br>
+    </div>
+    <div class="space-sect">
+        <textarea class="text-area"></textarea><br>
+    </div>
+
     <div>
+        <input type="submit" value="Submit">
 <button type="reset">Reset</button>
-<button type="submit">Submit</button>
+
+</div>
 </div>
 </form>
+</div>
 </body>
 </html>
